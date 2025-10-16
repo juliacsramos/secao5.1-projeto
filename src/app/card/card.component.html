@@ -1,5 +1,6 @@
 <div class="card">
     <div class="card__plan card__item">Plano <b>{{planType}}</b></div>
     <div class="card__price card__item">R${{planPrice}},00/Mês</div>
-    <app-card-button></app-card-button>
+    <app-card-button (buttonClick)="buttonClicked($event)" buttonDisabled></app-card-button>
 </div>
+<!-- o $event é um objeto especial do Angular que representa o valor emitido pelo evento -->

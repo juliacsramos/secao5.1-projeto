@@ -9,4 +9,7 @@ export class AppComponent {
   cardPlanType = 'Simples';
   cardPlanValue = 150;
 
+  handlePlanType(text: string) {
+    this.cardPlanType = text;
+  }
 }
